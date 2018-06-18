@@ -72,7 +72,8 @@
 				<div class="second-reason-blue">
 					<h2>Там есть мост дьявола</h2>
 					<p>-№2-</p>
-					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					<p>Да, по нему можно пройти! Если конечно
+						<br> вы осмелитесь</p>
 				</div>
 				<img src="img/devil-bridge.jpg" width="800" heidth="256" alt="картинка с видом на мост дьявола">
 			</section>
@@ -80,75 +81,81 @@
 				<section class="third-reason">
 					<h2>Небольшая площадь</h2>
 					<p>-№3-</p>
-					<p>Все достопримечательности находяться очень близко Красивая дорога</p>
+					<p>Все достопримечательности
+						<br> находяться очень близко Красивая дорога</p>
 				</section>
 				<section class="fourth-reason">
 					<h2>Мало туристов</h2>
 					<p>-№4-</p>
-					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					<p>Ехать в Седону из Лас-Вегаса совсем
+						<br> не скучно!</p>
 				</section>
-				<section class="fourth-reason">
+				<section class="fifth-reason">
 					<h2>Мало туристов</h2>
 					<p>-№5-</p>
-					<p>Большинство едет в Гранд-Каньон и толпится там</p>
+					<p>Большинство едет в Гранд-Каньон
+						<br> и толпится там</p>
 				</section>
 			</section>
 		</section>
 		<section class="search-form">
 			<h2 class="text-title ">Заинтересовались?</h2>
 			<p class="text-description ">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<form action="#" method="GET">
+			<div class="search">
 				<p>
-					<button class="button">Поиск гостиницы в Седоне</button>
+					<button type="button">Поиск гостиницы в Седоне</button>
 				</p>
-				<p>
-					<label for="entry">Дата заезда:</label>
-					<input type="date" id="entry" value="24 апреля 2017">
-				</p>
-				<p>
-					<label for="departure">Дата выезда:</label>
-					<input type="date" id="departure" value="4 июля 2017">
-				</p>
-				<p>
-					<label for="adults">Взрослые:</label>
-					<input type="number" id="adults" name="adults" value="2">
-					<label for="children">Дети:</label>
-					<input type="number" id="children" name="children" value="0">
-				</p>
-				<button class="button" type="submit">Найти</button>
-			</form>
-			<div class="map ">
-				<img src="img/map.jpg " width="1200 " height="593 " alt="Карта Седоны ">
-			</div>
+				<form action="#" method="POST">
+
+					<fieldset>
+						<p>
+							<label for="entry">Дата заезда:</label>
+							<input type="date" id="entry" value="24 апреля 2017">
+						</p>
+						<p>
+							<label for="departure">Дата выезда:</label>
+							<input type="date" id="departure" value="4 июля 2017">
+						</p>
+						<p>
+							<label for="adults">Взрослые:</label>
+							<input type="number" id="adults" name="adults" value="2">
+							<label for="children">Дети:</label>
+							<input type="number" id="children" name="children" value="0">
+						</p>
+						<button class="button" type="submit">Найти</button>
+					</fieldset>
+					<img src="img/map.jpg" width="1200" height="475" alt="Карта Седоны">
+				</form>
 		</section>
 	</main>
 </body>
 <footer>
-	<footer class="main-footer ">
-		<a class="site " href="# ">#VISITSEDONA</a>
-		<ul class="footer-social ">
+	<footer class="main-footer">
+		<a class="site" href="#">#VISITSEDONA</a>
+		<ul class="footer-social">
 			<li>
-				<a class="social-button tw " href="# ">
-					<img src="img/t.jpg " width="46 " height="48 " alt="Twitter ">
+				<a class="social-button tw" href="#">
+					<img src="img/t.jpg" width="46" height="48" alt="Twitter">
 				</a>
 			</li>
 			<li>
-				<a class="social-button fb " href="# ">
-					<img src="img/fb-icon.jpg " width="46 " height="48 " alt="Facebook ">
+				<a class="social-button fb" href="#">
+					<img src="img/fb-icon.jpg" width="46" height="48" alt="Facebook">
 				</a>
 			</li>
 			<li>
-				<a class="social-button yt " href="# ">
-					<img src="img/youtube.jpg " width="46 " height="48 " alt="Youtube ">
+				<a class="social-button yt" href="#">
+					<img src="img/youtube.jpg" width="46" height="48" alt="Youtube">
 				</a>
 			</li>
 		</ul>
 		<div>
 			<b>WEBSITE BY</b>
-			<a href="https://htmlacademy.ru ">
-				<img src="img/logo-name.png " width="115 " heidth="41 " alt="Логотип htmlacademy ">
+			<a href="https://htmlacademy.ru">
+				<img src="img/logo-name.png" width="115" heidth="41" alt="Логотип htmlacademy">
 			</a>
 		</div>
 	</footer>
+</footer>
 
 </html>

@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.main-navigation {
+    display: flex;
+}
+.picture{
+    height: 564px;
+    width: 1200px;
+    background: url("../img/new-background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.slogan {
+    text-align: center;
+    background-color:#ffffff;
+    height: 216px;
+}
+.slogan p {
+    color: #c9c9c9;
+    font-size: 14px;
+}
+.slogan h2 {
+    font-size: 21px;
+}
+
+.first-reason-blue{
+    background: #81b3d2;
+    width: 400px;
+    height: 256px;
+    color: #eeeeee;
+    text-align: center;
+}
+.second-reason-blue {
+    background:#81b3d2;
+    width: 400px;
+    height: 256px;
+    color: #eeeeee;
+    text-align: center;
+}
+.first-reason {
+    display: flex;
+    flex-direction: row; 
+}
+.second-reason {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.specific-reason {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 331px;
+    width: 1200px;    
+}
+.housing {
+    text-align: center;
+}
+.food {
+    text-align: center;
+}
+.souvenirs {
+    text-align: center;
+}
+.three-reasons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 257px;
+    width: 1200px;
+    background: #eeeeee;
+
+}
+.third-reason,
+.fourth-reason,
+.fifth-reason {
+    text-align: center;
+}
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-social {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+.filters {
+    display: flex;
+    background-image: url("../img/filter-background.jpg");
+    width: 1200px;
+    height: 220px;
+    color: #eeeeee;
+}
+.filters .filters-features {
+    display: flex;
+    justify-content: space-around;
+}
+.filters .search {
+    display: flex;
+}
+ul {
+    list-style-type: none;
+}
+.found-features {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 668px;
+}
+.sorting-specific {
+    display: flex;
+    justify-content: space-around;
+}
+.sorting-housing {
+    display: flex;
+    flex-direction: column;
+    height: 454px;
+}
+.hotel-features {
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 31px;
+}
+.motel-features {
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 31px;
+}
+.apartment-features {
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 31px;
+}
+.text-title {
+    text-align: center;
+}
+.text-description {
+    text-align: center;
+}
+.search {
+    text-align: center;
+}
