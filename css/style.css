@@ -35,6 +35,11 @@ p {
 h1 {
     font-size: 30px;
 }
+b {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
 .main-navigation {
     display: flex;
     background: #ffffff;
@@ -291,39 +296,9 @@ p:nth-child(3) {
     align-items: baseline;
     justify-content: space-between;
 }
-.main-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 122px;
-    background: #ffffff;
-    position: absolute;
-    width: 1200px;
-}
-.footer-social {
-    display: flex;
-    width: 150px;
-    justify-content: space-between;
-    
-}
-.filters {
-    display: flex;
-    background-image: url("../img/filter-background.jpg");
-    width: 1200px;
-    height: 220px;
-    color: #eeeeee;
-}
-.filters .filters-features {
-    display: flex;
-    justify-content: space-around;
-    width: 600px;
-}
-.filter-infrastructure ul {
-    padding: 0;
-} 
-.filter-type-of-housing ul {
-    padding: 0;
-}
+
+
+
 
 .search-range {
     display: block;
@@ -605,15 +580,81 @@ ul {
 .search {
     text-align: center;
 }
-.htmlacademy a:hover {
-    stroke: #81b3d2;
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 122px;
+    background: #ffffff;
+    position: absolute;
+    width: 1200px;
+}
+.logotyp:hover path,
+.logotyp:focus path  {
     fill: #81b3d2;
 }
+.logotyp:active path {
+    fill: #bdbbbc;
+}
+.logotyp {
+    width: 115px;
+    height: 41px;
+}
+.htmlacademy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 195px;
+}
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    
+}
+.social-button-tw,
+.social-button-fb,
+.social-button-yt {
+    display: flex;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    align-items: center;
+    justify-content: center;
+}
 .social-button-tw:hover,
-.social-button-tw:focus,
+.social-button-tw:focus, 
 .social-button-fb:hover,
 .social-button-fb:focus,
 .social-button-yt:hover,
-.social-button-yt:hover {
+.social-button-yt:focus{
+    background-color: #669ec0;
+}
+.social-button-tw:active,
+.social-button-fb:active,
+.social-button-yt:active {
+    background-color:#5496bd;
+}
+.social-button-tw:active path,
+.social-button-fb:active path,
+.social-button-yt:active path {
+    fill: #88b6d1;
+}
+.filters {
+    display: flex;
+    background-image: url("../img/filter-background.jpg");
+    width: 1200px;
+    height: 220px;
+    color: #eeeeee;
+}
+.filters .filters-features {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
 
+.filter-infrastructure li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    
 }
