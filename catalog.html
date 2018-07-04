@@ -64,7 +64,7 @@
                     </section>
                 </section>
                 <div class="search-range">
-                    <h3>Стоимость в сутки(Р)</h3>
+                    <h3>Стоимость в сутки(Р):</h3>
                     <div class="price-controls">
                         <p>
                             <input class="min-price" type="text" value="от 0">
@@ -72,12 +72,26 @@
                         </p>
                     </div>
                     <div class="range-controls">
-                        <div class="scale">
-                            <div class="toggle min-toggle">
+                        <div class="scale-choice">
+                            <div class="scale">
+                                <div class="slider1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="317px" height="2px">
+                                        <image opacity="0.302" x="0px" y="0px" width="317px" height="2px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT0AAAACCAQAAACAycPaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBwMQMSDW2OfdAAAAG0lEQVQ4y2P8783AxDAKRgG9we/RZDcKBggAAOxZAksM37hWAAAAAElFTkSuQmCC"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="slider2">
+                                    <img src="img/filter-button.png" width="22" height="22">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248px" height="2px">
+                                        <image x="0px" y="0px" width="248px" height="2px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAAACCAQAAADf0dn/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBwMQNAZ5opZlAAAAIklEQVQoz2P8/59hFIwM8Iqhm2Em00C7YhTQDfxn+MnwDQDSYAb+xRWidgAAAABJRU5ErkJggg=="
+                                        />
+                                    </svg>
+                                    <img src="img/filter-button2.png" width="22" height="22">
+                                </div>
                             </div>
-                            <div class="toggle max-toggle">
+                            <div class="show">
+                                <button class="transparent" type="submit">Показать</button>
                             </div>
-                            <button class="btn-transparent" type="submit">Показать</button>
                         </div>
                     </div>
                 </div>
@@ -87,19 +101,11 @@
         <main class="container">
             <h1 class="visually-hidden">Поиск гостиницы</h1>
             <div class="found-features">
-                <h3 class="found">Найдено:3</h3>
-                <p class="sorting">Сортировка:</p>
-                <ul class="sorting-specific">
-                    <li>
-                        <a class="sort-price">По цене</a>
-                    </li>
-                    <li>
-                        <a class="sort-type" href="#">По типу</a>
-                    </li>
-                    <li>
-                        <a class="sort-rating" href="#">По рейтингу</a>
-                    </li>
-                </ul>
+                <h3 class="found">Найдено: 3</h3>
+                <span class="sorting">Сортировка:</span>
+                <a class="sort-price">По цене</a>
+                <a class="sort-type" href="#">По типу</a>
+                <a class="sort-rating" href="#">По рейтингу</a>
                 <div class="triangle">
                     <img src="img/icon-up-dir.png" width="11" height="10">
                     <img src="img/icon-down-dir.png" width="11" height="10">
@@ -108,20 +114,17 @@
             <section class="sorting-housing">
                 <div class="hotel-features">
                     <figure>
-                        <img src="img/hotel.jpg" width="135" height="90" alt="Гостиница">
+                        <img src="img/hotel.jpg" width="135" height="90" alt="Фото гостиницы">
                     </figure>
                     <div class="hotel">
-                        <h3>
-                            <a class="hotel-name" href="#">Amara resort & Spa</a>
-                        </h3>
+                        <span class="hotel-name" href="#">Amara resort & Spa</span>
                         <div class="hotel-view-price">
-                            <a class="hotel-view">Гостиница</a>
-                            <a class="hotel-price">От 4000р</a>
+                            <span class="hotel-view">Гостиница</span>
+                            <span class="hotel-price">От 4000р</span>
                         </div>
-                        <div class="detailed-book">
-                            <a class="detailed" href="#">Подробнее</a>
-                            <a class="book" href="#">Забронировать</a>
-                        </div>
+                        <button class="detailed" href="#">Подробнее</button>
+                        <button class="book" href="#">Забронировать</button>
+
                     </div>
                     <div class="rating-stars">
                         <div class="stars">
@@ -135,20 +138,17 @@
                 </div>
                 <div class="motel-features">
                     <figure>
-                        <img src="img/motel.jpg" width="135" height="90" alt="Мотель">
+                        <img src="img/motel.jpg" width="135" height="90" alt=" Фото мотеля">
                     </figure>
                     <div class="motel">
-                        <h3>
-                            <a class="motel-name">Desert Quail Inn</a>
-                        </h3>
+                        <span class="motel-name">Desert Quail Inn</span>
                         <div class="motel-view-price">
-                            <a class="motel-view">Мотель</a>
-                            <a class="motel-price">От 3000р</a>
+                            <span class="motel-view">Мотель</span>
+                            <span class="motel-price">От 3000р</span>
                         </div>
-                        <div class="detailed-book">
-                            <a class="detailed" href="#">Подробнее</a>
-                            <a class="book" href="#">Забронировать</a>
-                        </div>
+                        <button class="detailed" href="#">Подробнее</button>
+                        <button class="book" href="#">Забронировать</button>
+
                     </div>
 
                     <div class="rating-stars">
@@ -163,20 +163,17 @@
 
                 <div class="apartment-features">
                     <figure>
-                        <img src="img/apartment.jpg" width="135" height="90" alt="Апартаменты">
+                        <img src="img/apartment.jpg" width="135" height="90" alt="Фото апартаменты">
                     </figure>
                     <div class="apartment">
-                        <h3>
-                            <a class="apartment-name"> Villas At Poco Diablo</a>
-                        </h3>
+                        <a class="apartment-name"> Villas At Poco Diablo</a>
                         <div class="apartment-view-price">
-                            <a class="apartment-view">Апартаменты</a>
-                            <a class="apartment-price">От 2000р</a>
+                            <span class="apartment-view">Апартаменты</span>
+                            <span class="apartment-price">От 2000р</span>
                         </div>
-                        <div class="detailed-book">
-                            <a class="detailed" href="#">Подробнее</a>
-                            <a class="book" href="#">Забронировать</a>
-                        </div>
+                        <button class="detailed" href="#">Подробнее</button>
+                        <button class="book" href="#">Забронировать</button>
+
                     </div>
                     <div class="rating-stars">
                         <div class="stars">
@@ -208,10 +205,23 @@
                         </a>
                     </li>
                 </ul>
-                <div>
-                    <b>WEBSITE BY</b>
+                <div class="htmlacademy">
+                    WEBSITE BY
                     <a href="https://htmlacademy.ru">
-                        <img src="img/logo_name.png" width="115" heidth="41" alt="Логотип htmlacademy">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="41" viewBox="0 0 115 41">
+                            <metadata>
+                                <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                            <rdf:Description rdf:about="" />
+                                        </rdf:RDF>
+                                    </x:xmpmeta>
+                                    <?xpacket end="w"?>
+                            </metadata>
+                            <image id="logo_name" width="115" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAApCAMAAAAxiOZFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC1lBMVEUjHyD///8jHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABji7E7AAAA8HRSTlMAAAwoRV96d1s/JAgVMEtog5651/Hr0LWYfGENcvn638Sor8rn/jil8FoBaYeA87ughU0yFwUdOVVxi8NA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"
+                            />
+                        </svg>
+
                     </a>
                 </div>
             </footer>
