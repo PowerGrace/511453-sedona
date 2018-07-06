@@ -20,82 +20,74 @@
                 <a class="map" href="#">Карта штата</a>
                 <a class="hotels" href="#">Гостиницы</a>
             </nav>
+
             <section class="filters">
-                <section class="filters-features">
-                    <div class="filter-infrastructure">
-                        <h3>Инфраструктура:</h3>
-                        <ul>
-                            <li>
-                                <input class="visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
-                                <label for="filter-pool">Бассейн</label>
+                <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+                    <fieldset class="filters-infrastructure">
+                        <legend class="filters-title">Инфраструктура:</legend>
+                        <div class="filter-wrapper">
+                            <input class="visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
+                            <label for="filter-pool">Бассейн</label>
+                        </div>
+                        <div class="filter-wrapper">
+                            <input class="visually-hidden" type="checkbox" name="parking" id="filter-parking">
+                            <label for="filter-parking"> Парковка</label>
+                        </div>
+                        <div class="filter-wrapper">
 
-                            </li>
-                            <li>
-                                <input class="visually-hidden" type="checkbox" name="parking" id="filter-parking">
-                                <label for="filter-parking"> Парковка</label>
+                            <input class="visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
+                            <label for="filter-wifi">Wi-Fi</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter-type-of-housing">
+                        <legend class="filters-title">Тип жилья:</legend>
+                        <div class="filter-wrapper">
+                            <input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
+                            <label for="filter-hotel">Гостиница</label>
+                        </div>
+                        <div class="filter-wrapper">
+                            <input class="visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
+                            <label for="filter-motel">Мотель</label>
+                        </div>
+                        <div class="filter-wrapper">
+                            <input class="visually-hidden" type="checkbox" name="apartment" id="filter-apartment" checked>
+                            <label for="filter-apartment">Апартаменты</label>
+                        </div>
+                    </fieldset>
 
-                            </li>
-                            <li>
-                                <input class="visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
-                                <label for="filter-wifi">Wi-Fi</label>
-
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="filter-type-of-housing">
-                        <h3>Тип жилья:</h3>
-                        <ul>
-                            <li>
-                                <input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
-                                <label for="filter-hotel">Гостиница</label>
-
-                            </li>
-                            <li>
-                                <input class="visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
-                                <label for="filter-motel">Мотель</label>
-
-                            </li>
-                            <li>
-                                <input class="visually-hidden" type="checkbox" name="apartment" id="filter-apartment" checked>
-                                <label for="filter-apartment">Апартаменты</label>
-
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <div class="search-range">
-                    <h3>Стоимость в сутки(Р):</h3>
-                    <div class="price-controls">
-                        <p>
-                            <input class="min-price" type="text" value="от 0">
-                            <input class="max-price" type="text" value="до 3000">
-                        </p>
-                    </div>
-                    <div class="range-controls">
-                        <div class="scale-choice">
-                            <div class="scale">
-                                <div class="slider1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="317px" height="2px">
-                                        <image opacity="0.302" x="0px" y="0px" width="317px" height="2px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT0AAAACCAQAAACAycPaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBwMQMSDW2OfdAAAAG0lEQVQ4y2P8783AxDAKRgG9we/RZDcKBggAAOxZAksM37hWAAAAAElFTkSuQmCC"
-                                        />
-                                    </svg>
+                    <div class="search-range">
+                        <h3>Стоимость в сутки(Р):</h3>
+                        <div class="price-controls">
+                            <p>
+                                <input class="min-price" type="text" value="от 0">
+                                <input class="max-price" type="text" value="до 3000">
+                            </p>
+                        </div>
+                        <div class="range-controls">
+                            <div class="scale-choice">
+                                <div class="scale">
+                                    <div class="slider1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="317px" height="2px">
+                                            <image opacity="0.302" x="0px" y="0px" width="317px" height="2px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT0AAAACCAQAAACAycPaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBwMQMSDW2OfdAAAAG0lEQVQ4y2P8783AxDAKRgG9we/RZDcKBggAAOxZAksM37hWAAAAAElFTkSuQmCC"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="slider2">
+                                        <img src="img/filter-button.png" width="22" height="22">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248px" height="2px">
+                                            <image x="0px" y="0px" width="248px" height="2px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAAACCAQAAADf0dn/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBwMQNAZ5opZlAAAAIklEQVQoz2P8/59hFIwM8Iqhm2Em00C7YhTQDfxn+MnwDQDSYAb+xRWidgAAAABJRU5ErkJggg=="
+                                            />
+                                        </svg>
+                                        <img src="img/filter-button2.png" width="22" height="22">
+                                    </div>
                                 </div>
-                                <div class="slider2">
-                                    <img src="img/filter-button.png" width="22" height="22">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248px" height="2px">
-                                        <image x="0px" y="0px" width="248px" height="2px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAAACCAQAAADf0dn/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBwMQNAZ5opZlAAAAIklEQVQoz2P8/59hFIwM8Iqhm2Em00C7YhTQDfxn+MnwDQDSYAb+xRWidgAAAABJRU5ErkJggg=="
-                                        />
-                                    </svg>
-                                    <img src="img/filter-button2.png" width="22" height="22">
+                                <div class="show">
+                                    <button class="transparent" type="submit">Показать</button>
                                 </div>
-                            </div>
-                            <div class="show">
-                                <button class="transparent" type="submit">Показать</button>
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </form>
             </section>
         </header>
         <main class="container">
